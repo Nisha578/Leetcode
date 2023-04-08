@@ -7,7 +7,7 @@ class Solution {
              }
              
              for(int i = 0; i<nums.length; i++) {
-                   if(map.containsKey(nums[i] - 1) {
+                   if(map.containsKey(nums[i] - 1)) {
                           map.put(nums[i],false);
                    }
              }
@@ -15,7 +15,7 @@ class Solution {
              int max = 0;
              for(Integer key : map.keySet()) {
                   if(map.get(key)  == true) {
-                     max = math.max(max, findLength(map,key));
+                     max = Math.max(max, findLength(map,key));
                  }
              }
              return max;
